@@ -19,6 +19,9 @@ header {
 
     
     background-image: url(../image/samar02.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
 }
 
 .block-navbar {
@@ -310,4 +313,446 @@ nav {
 }
 
 
+/* ---------- section ---------- */
+
+section {
+    padding-top: 115px;
+    
+}
+
+/* ------- service -------- */
+
+.service {
+    display: flex;
+    justify-content: center;
+
+    background-image: url(../image/samar05.png);
+    background-size: cover;
+    background-position: top center ;
+    background-repeat: no-repeat;
+
+    padding-bottom: 70px;
+}
+
+.block-service {
+    width: 1200px;
+   
+
+}
+
+.service-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-title h6 {
+    color: #f55f8d;
+    font-size: 1.4rem;
+}
+
+.service-title h2 {
+    font-size: 3.8rem;
+    line-height: 1.2;
+}
+
+.service-content {
+    display: flex;
+    justify-content: space-between !important;
+    
+}
+
+.service-clone {
+    width: 31.5%;
+    
+    transition: all 1s ease;
+}
+
+.service-clone:hover {
+    transform: translateY(-15px);
+}
+
+.block-service-clone {
+    text-align: center;
+    padding: 30px;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+    height: 420px;
+}
+
+.service-clone-img {
+    
+}
+
+.service-clone-img img {
+    width: 215px;
+    height: 215px;
+}
+
+
+.service-clone-title {
+    overflow: hidden;
+}
+
+.service-clone-title h4 {
+    margin-bottom: 15px;
+    color: #262626;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.service-clone-title p {
+    color: #636363;
+    font-size: 1rem;
+    padding: 0 2px;
+}
+
+
+/* ------ about ------  */
+.about {
+
+    margin-bottom: 90px;
+
+    background-image: url(../image/samar09.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+   
+    padding: 0 350px;
+}
+
+.block-about {
+    padding-bottom: 115px;
+    
+
+}
+
+.block-about-content {
+    display: flex;
+    padding-top: 100px;
+    
+}
+
+.about-content-img {
+    width: 50%;
+    
+    position: relative;
+}
+
+.block-img-about img {
+   position: absolute;
+   left: -450px;
+
+   width: 960px;
+   height: 640px;
+   border-radius: 0 100px 100px 0;
+}
+
+.block-img-about::after {
+    content: "";
+    background: #fef2f6;
+    position: absolute;
+    top: 0;
+    left: -430px;
+    width: 960px;
+    height: 640px;
+    z-index: -1;
+    transform: rotate(8deg);
+    border-radius: 0 100px 100px 0;
+
+}
+
+.about-content-main {
+    width: 50%;
+
+ 
+}
+
+.about-head {
+
+}
+
+.about-head h6 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f55f8d;
+}
+
+.about-head h2 {
+    font-size: 3.8rem;
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #262626;
+}
+
+.about-head p {
+    font-size: 0.9rem;
+    line-height: 25px;
+    color: #636363;
+}
+
+.about-check {
+
+}
+
+.about-check ul {
+    list-style: none;
+}
+
+.about-check ul li {
+    padding: 8px 5px 8px 0;
+    font-size: 0.9rem;
+    color: #636363;
+}
+
+
+
+.about-check ul li i {
+   color: #f55f8d;
+    font-size: 1.1rem;
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    position: relative;
+   
+}
+
+.about-check ul li i::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 10px;
+
+    width: 22px;
+    height: 22px;
+    
+    border: 2px solid #f55f8d;
+    border-radius: 50%;
+}
+
+.extra-about {
+    margin-top: 40px;
+}
+
+.extra-learn{
+    margin-left: 15px;
+}
+
+.extra-learn a {
+    background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+    background-size: 200%;
+    border-color: transparent !important;
+    transition: all 0.5s;
+
+    padding: 20px 35px;
+    display: inline-block;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ----- offer ------  */
+
+.offer {
+    background-image: url(../image/samar11.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 350px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.offer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f55f8c0c;
+    
+}
+
+
+
+.offer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 60px;
+    line-height: 1.2;
+    width: 168px;
+   
+}
+
+.offer-icon {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(to right,#f55f8d 36%,#f8ae56 83%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-icon i {
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 35px;
+}
+
+.offer-number {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #f55f8d;
+    padding-left: 5px;
+    overflow: hidden;
+}
+
+.offer-number::after {
+    content: "MI";
+    margin-left: 5px;
+}
+
+.offer-number-last::after {
+    display: none;
+}
+
+.offer-item h5 {
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+
+/* --------- features ------- */
+.features {
+    padding-top: 200px;
+
+    display: flex;
+    justify-content: center;
+
+    background-image: url(../image/samar05.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.block-features {
+    display: flex;
+    
+    
+    width: 1200px;
+    padding-top: 20px;
+}
+
+.features-content {
+    width: 50%;
+    margin-top: -125px;
+}
+
+.features-content h6 {
+    color:#f55f8d;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.features-content h2 {
+    font-size: 3.8rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #262626;
+}
+
+.features-clone {
+    display: flex;
+    align-items: center;
+    
+   
+    margin-top: 20px;
+    
+    width: 519px;
+    height: 151px;
+    box-shadow: 0 0px 60px 0px rgb(0 0 0 / 10%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+.features-clone-2 {
+    margin-left: 40px ;
+}
+
+.features-clone:hover {
+    background-image: linear-gradient(
+    to right,#f55f8d 0, #f8ae56 51%,#f55f8d 100%);
+}
+
+.features-clone:hover i {
+    color: white !important;
+    cursor: pointer;
+}
+
+.features-clone:hover .features-clone-content h4 {
+    color: white !important;
+    cursor: pointer;
+}
+
+.features-clone:hover .features-clone-content p {
+    color: white !important;
+    cursor: pointer;
+}
+
+.features-clone i {
+    width: 20%;
+    text-align: center;
+    color: #f55f8d;
+    font-size: 3.5rem;
+    margin-right: 20px;
+}
+
+.features-clone-content {
+    width: 80%;
+}
+
+.features-clone-content h4 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #262626;
+}
+
+.features-clone-content p {
+    font-size: 0.9rem;
+    padding-right: 50px;
+    color: #636363;
+}
+
+.features-img {
+    width: 50%;
+}
+
+.features-img img {
+    width: 100%;
+    height: 120%;
+    margin-top: -85px;
+
+    animation: move 5s infinite;
+}
 
