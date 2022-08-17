@@ -327,6 +327,139 @@
             </div>
         </div>
        
+        <div class="portfolio">
+            <div class="portfolio-title">
+                <h6>Portfolio</h6>
+                <h2>Our Latest Work</h2>
+            </div>
+            <div class="portfolio-content">
+                <div class="portfolio-grid">
+                    <div class="portfolio-grid-clone">
+                        <img src="./image/samar14.jpg" alt="">
+
+                        <div class="overlay">
+                            <div class="overlay-title">
+                                <h5>Software Landing</h5>
+                                <p>By Jhone Doe</p>
+                            </div>
+
+                            <div class="overlay-items">
+                                <i class="fa fa-plus"></i>
+                            </div>
+
+                            <div class="overlay-light"></div>
+                        </div>
+                    </div>
+                    <div class="portfolio-grid-clone">
+                        <img src="./image/samar15.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-title">
+                                <h5>Software Landing</h5>
+                                <p>By Jhone Doe</p>
+                            </div>
+
+                            <div class="overlay-items">
+                                <i class="fa fa-plus"></i>
+                            </div>
+
+                            <div class="overlay-light"></div>
+                        </div>
+                    </div>
+                    <div class="portfolio-grid-clone">
+                        <img src="./image/samar16.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-title">
+                                <h5>Software Landing</h5>
+                                <p>By Jhone Doe</p>
+                            </div>
+
+                            <div class="overlay-items">
+                                <i class="fa fa-plus"></i>
+                            </div>
+
+                            <div class="overlay-light"></div>
+                        </div>
+                    </div>
+                    <div class="portfolio-grid-clone">
+                        <img src="./image/samar17.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-title">
+                                <h5>Software Landing</h5>
+                                <p>By Jhone Doe</p>
+                            </div>
+
+                            <div class="overlay-items">
+                                <i class="fa fa-plus"></i>
+                            </div>
+
+                            <div class="overlay-light"></div>
+                        </div>
+                    </div>
+                    <div class="portfolio-grid-clone">
+                        <img src="./image/samar18.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-title">
+                                <h5>Software Landing</h5>
+                                <p>By Jhone Doe</p>
+                            </div>
+
+                            <div class="overlay-items">
+                                <i class="fa fa-plus"></i>
+                            </div>
+
+                            <div class="overlay-light"></div>
+                        </div>
+                    </div>
+                    <div class="portfolio-grid-clone">
+                        <img src="./image/samar19.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-title">
+                                <h5>Software Landing</h5>
+                                <p>By Jhone Doe</p>
+                            </div>
+
+                            <div class="overlay-items">
+                                <i class="fa fa-plus"></i>
+                            </div>
+
+                            <div class="overlay-light"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="plan">
+            <div class="plan-title">
+                <h6>Choose Your Plan</h6>
+                <h2>Choose Your Plan</h2>
+            </div>
+
+            <div class="plan-container">
+                <div class="tab-slider--nav">
+                   <ul class="tab-slider--tabs">
+                      <li class="tab-slider--trigger active" rel="tab1">Monthly</li>
+                      <li class="tab-slider--trigger" rel="tab2">Yearly</li>
+                   </ul>
+                </div>
+                <div class="tab-slider--container">
+                   <div id="tab1" class="tab-slider--body">
+                      <div class="plan-clone">
+                        <div class="clone-title">
+                            <h3>Basic Plan</h3>
+                            <img src="./image/samar21.jpg" alt="">
+                        </div>
+                        <div class="clone-check"></div>
+                      </div>
+                   </div>
+                   <div id="tab2" class="tab-slider--body">
+                      <h2>Second Tab</h2>
+                      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                   </div>
+                </div>
+             </div>
+        </div>
+        
         
     </section>
 
@@ -346,7 +479,25 @@
 
 
 
-
+    <script>
+        $("document").ready(function(){
+        $(".tab-slider--body").hide();
+        $(".tab-slider--body:first").show();
+        });
+  
+        $(".tab-slider--nav li").click(function() {
+        $(".tab-slider--body").hide();
+        var activeTab = $(this).attr("rel");
+        $("#"+activeTab).fadeIn();
+           if($(this).attr("rel") == "tab2"){
+              $('.tab-slider--tabs').addClass('slide');
+           }else{
+              $('.tab-slider--tabs').removeClass('slide');
+           }
+        $(".tab-slider--nav li").removeClass("active");
+        $(this).addClass("active");
+        });
+      </script>
     
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
