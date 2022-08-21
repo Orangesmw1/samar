@@ -1418,6 +1418,68 @@ section {
 
 
 
+/* ----- blogs ---------  */
+
+.blogs {
+
+}
+
+.blogs-title {
+    text-align: center;
+}
+
+.blogs-title h6 {
+    color:#f55f8d;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.blogs-title h2 {
+    font-size: 3.8rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #262626;
+}
+
+
+.blogs-content {
+
+}
+
+.blogs-content .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.blogs-content .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.blogs-content .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.blogs
   
 
 
