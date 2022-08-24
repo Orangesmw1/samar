@@ -1421,11 +1421,11 @@ section {
 /* ----- blogs ---------  */
 
 .blogs {
-
+    padding: 50px 0;
 }
 
 .blogs-title {
-    text-align: center;
+    text-align: center
 }
 
 .blogs-title h6 {
@@ -1443,16 +1443,21 @@ section {
 
 
 .blogs-content {
-
+    display: flex;
+    justify-content: center;
 }
 
 .blogs-content .swiper {
-    width: 100%;
+    width: 70%;
     height: 100%;
+
+    margin: 0;
+    justify-content: flex-start !important;
+    
   }
 
 .blogs-content .swiper-slide {
-    text-align: center;
+    width: 370px !important; 
     font-size: 18px;
     background: #fff;
 
@@ -1471,6 +1476,11 @@ section {
     align-items: center;
   }
 
+.blogs-content .swiper-wrapper {
+    
+} 
+
+
 .blogs-content .swiper-slide img {
     display: block;
     width: 100%;
@@ -1479,8 +1489,98 @@ section {
 }
 
 
-.blogs
+
+.item-blogs {
+    background-color: rgba(245, 95, 141, 0.1);
+    
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+
+}
+
+.item-img {
+
+}
+
+.item-img img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-content {
+    position: relative;
+
+    padding: 30px 15px 20px 15px;;
+}
+
+.item-content h4 {
+    margin: 30px 0 10px;
+    line-height: 1.4;
+    color: #262626;
+    font-size: 1.6rem;
+}
+
+.item-content p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    padding-right: 20px;
+}
+
+
+.item-content .date {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+
+    color: white;
+    background: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+    background-size: 200%;
+    line-height: 1;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+
+
+}
+
+.item-content ul {
+    display: flex;
+    
+
+    list-style: none;
+    border-top: 1px solid #6363632f;
+    padding-top: 20px;
+}
+
+
+
+.item-content .comment {
+    font-size: 1rem;
+}
+
+.comment a {
+    color: #f55f8d;
+    text-decoration: none;
+}
+
+.item-content .name {
+    padding-right: 20px;
+    font-size: 1rem;
+    
+}
+
+.name a {
+    text-decoration: none;
+    color: #f55f8d;
+}
+
+
+
+
   
+
 
 
 
